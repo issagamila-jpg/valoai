@@ -15,11 +15,11 @@ VALOAI is a **real-time AI-driven aim assist** that leverages **object detection
 
 ## 🔥 Why Use VALOAI?  
 
-✔ **100% Free** – No subscriptions, no hidden fees  
-✔ **Undetectable** – No game memory modifications 🛡️  
-✔ **AI-Powered Accuracy** – YOLOv5-based real-time detection 🎯  
-✔ **Hardware-Based Execution** – Uses **Arduino Leonardo + USB Host Shield 2.0** 🔌  
-✔ **Optimized for Performance** – CUDA-accelerated for fast, efficient processing 🚀  
+**100% Free** – No subscriptions, no hidden fees  
+**Undetectable** – No game memory modifications 🛡️  
+**AI-Powered Accuracy** – YOLOv5-based real-time detection 🎯  
+**Hardware-Based Execution** – Uses **Arduino Leonardo + USB Host Shield 2.0** 🔌  
+**Optimized for Performance** – CUDA-accelerated for fast, efficient processing 🚀  
 
 https://github.com/user-attachments/assets/3e0021b0-3414-4e50-8b4d-94e76664d2dc
 
