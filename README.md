@@ -40,9 +40,7 @@ https://github.com/user-attachments/assets/3e0021b0-3414-4e50-8b4d-94e76664d2dc
 
    ```cpp
    buttons = buf[0];
-   xm = buf[1];
-   ym = buf[2];
-   scr = buf[3];
+   xm = buf[1], ym = buf[2], scr = buf[3];
    ```
 
 5. Upload the script to your **Arduino Leonardo** and test until everything matches your mouse input  
