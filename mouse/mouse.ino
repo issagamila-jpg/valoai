@@ -58,6 +58,7 @@ uint8_t index1 = 0;
 void setup() {
     Mouse.begin();
     Serial.begin(9600);
+    Serial.setTimeout(1);
     Usb.Init();
     if (!Hid.SetReportParser(0, &Mou)) {
     }
