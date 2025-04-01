@@ -34,7 +34,7 @@ def windowcapture():
     dataBitMap = win32ui.CreateBitmap()
     dataBitMap.CreateCompatibleBitmap(dcObj, fov, fov)
     cDC.SelectObject(dataBitMap)
-    cDC.BitBlt((0, 0), (fov, fov), dcObj, (height, width), win32con.SRCCOPY) #Modify FOV if your screen resolution is higher than 1920x1080
+    cDC.BitBlt((0, 0), (fov, fov), dcObj, (height, width), win32con.SRCCOPY)
     signedIntsArray = dataBitMap.GetBitmapBits(True)
     img = np.frombuffer(signedIntsArray, dtype='uint8').reshape((fov, fov, 4))
     dcObj.DeleteDC()
