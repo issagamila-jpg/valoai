@@ -1,3 +1,5 @@
+[![discordserv](https://github.com/user-attachments/assets/f5c2f472-a084-47af-b1e0-f61720e7e11e)](https://discord.gg/bnq2msQZD2) [![donat](https://github.com/user-attachments/assets/e654b974-f9c4-4d29-822e-eef40bf1d949)](https://ko-fi.com/amilia2378)
+
 # 🎯 VALOAI – AI-Powered Aim Assist for Valorant  
 
 VALOAI is a **real-time AI-driven aim assist** that leverages **object detection** with CUDA acceleration on Nvidia GPUs. Designed for **smooth, precise targeting**, VALOAI helps users achieve **instant headshots** without modifying game files.  
