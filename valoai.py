@@ -15,6 +15,9 @@ print(colored('''     _    _     _
     |___/ \__,_|____\___/ \__,_|_|''', "magenta",attrs=['bold']))
 fov = 320
 mid = fov / 2
+height = (1920 / 2) - mid
+width = (1080 / 2) - mid
+#Replace 1920 and 1080 if your screen resolution is higher than 1920x1080
 model = torch.hub.load('v/scripts/yolov5-master', 'custom', path='v/scripts/best640.pt', source='local', force_reload=True).cuda()
 if torch.cuda.is_available():
     print(colored("CUDA ACCELERATION [ENABLED]", "green"))
@@ -31,7 +34,7 @@ def windowcapture():
     dataBitMap = win32ui.CreateBitmap()
     dataBitMap.CreateCompatibleBitmap(dcObj, fov, fov)
     cDC.SelectObject(dataBitMap)
-    cDC.BitBlt((0, 0), (fov, fov), dcObj, (800, 380), win32con.SRCCOPY) #Modify FOV if your screen resolution is higher than 1920x1080
+    cDC.BitBlt((0, 0), (fov, fov), dcObj, (height, width), win32con.SRCCOPY) #Modify FOV if your screen resolution is higher than 1920x1080
     signedIntsArray = dataBitMap.GetBitmapBits(True)
     img = np.frombuffer(signedIntsArray, dtype='uint8').reshape((fov, fov, 4))
     dcObj.DeleteDC()
