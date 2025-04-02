@@ -15,9 +15,9 @@ print(colored('''     _    _     _
     |___/ \__,_|____\___/ \__,_|_|''', "magenta",attrs=['bold']))
 fov = 320
 mid = fov / 2
-height = (1920 / 2) - mid
-width = (1080 / 2) - mid
-#Replace 1920 and 1080 if your screen resolution is higher than 1920x1080
+height = int((1920 / 2) - mid)
+width = int((1080 / 2) - mid)
+#Replace 1920x1080 for a custom resolution
 model = torch.hub.load('v/scripts/yolov5-master', 'custom', path='v/scripts/best640.pt', source='local', force_reload=True).cuda()
 if torch.cuda.is_available():
     print(colored("CUDA ACCELERATION [ENABLED]", "green"))
