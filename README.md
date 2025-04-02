@@ -8,7 +8,7 @@ VALOAI is a **real-time AI-driven aim assist** that leverages **object detection
 
 > ⚠️ **For educational purposes only. The developers are not responsible for any misuse.**
 
-![capture](https://github.com/user-attachments/assets/a2f6f9f7-64ed-4b29-97c7-d3d3e02c27e4)
+![capture](https://github.com/user-attachments/assets/d52c7671-9fda-4c39-bd9a-8e743e2261e0)
 
 ☕ $5 for a coffee and a few more lines of code—thanks for helping me build something awesome!  
 [Donate 💗](https://ko-fi.com/amilia2378/goal?g=0)
