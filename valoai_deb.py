@@ -56,10 +56,10 @@ while True:
         x = cX - mid if cX > mid else -(mid - cX)
         y = cY - mid if cY > mid else -(mid - cY)
         # Draw bounding box and center point
-        cv2.rectangle(sct_img, (xmin, ymin), (xmax, ymax), (0, 255, 0), 2)
+        cv2.rectangle(sct_img, (xmin, ymin), (xmax, ymax), (255, 255, 255), 2)
         cv2.circle(sct_img, (int(cX), int(cY)), 5, (0, 0, 255), -1)
-        cv2.putText(sct_img, f"({xmin}, {ymin}), ({xmax}, {ymax})", (xmin, ymin - 10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+        cv2.putText(sct_img, f"({int(cX)}, {int(cY)})", (xmin, ymin - 10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
         if keyboard.is_pressed('Alt'):
             calculatedistance(x, y)
     cv2.imshow("VALOAI", sct_img)
