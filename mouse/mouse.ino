@@ -32,6 +32,13 @@ class HIDMouseReportParser : public HIDReportParser {
     HIDMouseReportParser(HIDMouseEvents *evt) : mouEvents(evt), oldButtons(0) {}
     
     void Parse(USBHID *hid, bool is_rpt_id, uint8_t len, uint8_t *buf) {
+      Serial.print("BUF: ");
+for (int i = 0; i < len; i++) {
+  Serial.print(buf[i]);
+  Serial.print(" ");
+}
+Serial.println();
+
         uint8_t buttons = buf[0]; // For mouse clicks
         if (buttons != oldButtons) {
             for (uint8_t but_id = 1; but_id <= 4; but_id <<= 1) {
